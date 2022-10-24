@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://room-homepage-master98.netlify.app/)
+- Solution URL: [Room homepage master](https://github.com/wuzgood98/room-homepage-master)
+- Live Site URL: [Room homepage master](https://room-homepage-master98.netlify.app/)
 
 ## My process
 
