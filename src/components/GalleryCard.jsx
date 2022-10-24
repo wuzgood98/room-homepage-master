@@ -69,13 +69,13 @@ const GalleryCard = ({ img, title, content, action, setIndex, gallery }) => {
         <button onClick={() => setIsMenuOpen(true)} className='absolute w-6 top-[2.6rem] left-5 active:scale-95 transition-transform md:hidden'>
           <img src={hamburger} alt="hamburger" className='w-full' />
         </button>
-        <h2 className='absolute top-8 left-0 right-0 mx-auto font-semibold text-3xl tracking-wide text-white lowercase justify-self-start w-max md:hidden'>room</h2>
+        <h1 className='absolute top-8 left-0 right-0 mx-auto font-semibold text-3xl tracking-wide text-white lowercase justify-self-start w-max md:hidden'>room</h1>
 
         <img src={img || tempImg} alt="" className='w-full object-cover h-full' />
 
         {/* desktop navigation */}
         <header className="absolute hidden items-center justify-between w-[29rem] top-16 left-16 md:flex">
-          <h3 className="text-5xl text-white lowercase">room</h3>
+          <h1 className="text-5xl text-white lowercase">room</h1>
 
           <nav className="flex items-center">
             <ul className='flex items-center gap-8'>
