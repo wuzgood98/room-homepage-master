@@ -1,16 +1,16 @@
 import { useState } from 'react'
 
-import useData from './utils/useData'
+import galleryData from './data/data'
 
 import GalleryCard from './components/GalleryCard'
 import About from './components/About'
 
 
 function App() {
-  const [data] = useData()
+  const [gallery, setGallery] = useState(galleryData)
   const [index, setIndex] = useState(0)
 
-  const { img, title, content, action } = data[index]
+  const { img, title, content, action } = gallery[index]
 
   return (
     <main className='w-full h-screen font-spartan'>
@@ -20,7 +20,7 @@ function App() {
         content={content}
         action={action}
         setIndex={setIndex}
-        gallery={data}
+        gallery={gallery}
         index={index}
       />
       <About />
