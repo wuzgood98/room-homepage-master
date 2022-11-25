@@ -71,8 +71,10 @@ const GalleryCard = ({ mobileImg, desktopImg, title, content, action, setIndex, 
         </button>
         <h1 className='absolute top-8 left-0 right-0 mx-auto font-semibold text-3xl tracking-wide text-white lowercase justify-self-start w-max md:hidden'>room</h1>
 
-
-        <img src={mobileImg || tempImg} alt="" className='w-full object-cover h-full' />
+        <picture>
+          <source srcSet={desktopImg} media='(min-width: 640px)' />
+          <img src={mobileImg || tempImg} alt={title} className='w-full object-cover h-full' />
+        </picture>
 
         {/* desktop navigation */}
         <header className="absolute hidden items-center justify-between w-[29rem] top-16 left-16 md:flex">
