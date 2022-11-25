@@ -10,12 +10,13 @@ function App() {
   const [gallery, setGallery] = useState(galleryData)
   const [index, setIndex] = useState(0)
 
-  const { img, title, content, action } = gallery[index]
+  const { mobileImg, desktopImg, title, content, action } = gallery[index]
 
   return (
     <main className='w-full h-screen font-spartan'>
       <GalleryCard
-        img={img}
+        mobileImg={mobileImg}
+        desktopImg={desktopImg}
         title={title}
         content={content}
         action={action}
