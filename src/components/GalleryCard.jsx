@@ -6,7 +6,7 @@ import angleLeft from '../assets/images/icon-angle-left.svg'
 import angleRight from '../assets/images/icon-angle-right.svg'
 
 
-const GalleryCard = ({ img, title, content, action, setIndex, gallery }) => {
+const GalleryCard = ({ mobileImg, desktopImg, title, content, action, setIndex, gallery }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const nextContent = () => {
@@ -71,7 +71,8 @@ const GalleryCard = ({ img, title, content, action, setIndex, gallery }) => {
         </button>
         <h1 className='absolute top-8 left-0 right-0 mx-auto font-semibold text-3xl tracking-wide text-white lowercase justify-self-start w-max md:hidden'>room</h1>
 
-        <img src={img || tempImg} alt="" className='w-full object-cover h-full' />
+
+        <img src={mobileImg || tempImg} alt="" className='w-full object-cover h-full' />
 
         {/* desktop navigation */}
         <header className="absolute hidden items-center justify-between w-[29rem] top-16 left-16 md:flex">
